@@ -1,0 +1,15 @@
+type: Wall
+health: 900
+size: 2
+category: defense
+requirements: [
+  uranus/20
+  depleted-uranus/4
+]
+
+research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
+  parent: bullet-thrower
+  requirements: [
+    uranus/200
+  ]
+}

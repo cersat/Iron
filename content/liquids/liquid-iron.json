@@ -1,0 +1,11 @@
+{
+  "name": "liquid-iron",
+  "color": "7f7f7f",
+  "viscosity": 0.6,
+  "temperature": 0.5,
+  "explosiveness": 0.0,
+  "flammability": 0.0,
+  "radioactivity": 0.0,
+  "coolant": false,
+  "hidden": false
+}

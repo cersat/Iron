@@ -1,0 +1,65 @@
+type: ItemTurret
+health: 835
+size: 3
+category: turret
+# Перезарядка в тиках (60 тиков = 1 секунда).
+reload: 90
+# Дальность стрельбы в тайлах.
+range: 150
+# Скорость вращения турели.
+rotateSpeed: 2.5
+
+# --- СНАРЯДЫ И БОЕПРИПАСЫ ---
+# Здесь мы указываем, какие предметы турель использует как патроны.
+ammoTypes: {
+  uranus: {
+    type: ArtilleryBullet
+    damage: 50
+    # Урон по площади.
+    splashDamage: 40
+    # Радиус взрыва.
+    splashDamageRadius: 20
+    speed: 3
+    lifetime: 90
+    sprite: "bullet"
+    hitEffect: flakExplosion
+    shootEffect: shootBig
+    shootSound: artillery
+    status: radioactivity
+    statusDuration: 180
+  }
+  depleted-uranus: {
+    type: ArtilleryBullet
+    damage: 60
+    # Урон по площади.
+    splashDamage: 35
+    # Радиус взрыва.
+    splashDamageRadius: 15
+    speed: 3
+    lifetime: 105
+    sprite: "bullet"
+    hitEffect: flakExplosion
+    shootEffect: shootBig
+    shootSound: artillery
+    status: radioactivity
+    statusDuration: 100
+  }
+}
+requirements: [
+  uranus/10
+  iron/120
+]
+
+research: {
+  parent: iron-smelter
+  requirements: [
+    uranus/15
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: uranus
+      amount: 10
+    }
+  ]
+}

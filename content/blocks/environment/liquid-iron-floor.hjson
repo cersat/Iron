@@ -1,0 +1,8 @@
+type: Floor
+liquidDrop: liquid-iron
+damage: 34
+isLiquid: true
+speedMultiplier: 0.5
+variants: 0
+//cacheLayer: water
+albedo: 0.8

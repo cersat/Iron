@@ -1,0 +1,33 @@
+// content/blocks/iron-manipulator.hjson
+type: MassDriver
+
+size: 1
+range: 24  // 2 блока - 8 (внутренние единицы Mindustry)
+rotateSpeed: 6
+translation: 0  // БЕЗ ОТДАЧИ
+minDistribute: 1  // швыряет каждый предмет
+knockback: 0  // БЕЗ ОТДАЧИ
+
+reload: 30  // быстрая перезарядка
+itemCapacity: 1
+
+// БЕЗ ЭНЕРГИИ
+hasPower: false
+
+requirements: [iron/10]
+
+category: distribution
+
+research: {
+  parent: iron-pump
+  requirements: [
+    iron/15
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: iron
+      amount: 30
+    }
+  ]
+}

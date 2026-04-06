@@ -1,0 +1,24 @@
+type: CoreBlock
+name: shard
+
+size: 3
+health: 2000
+itemCapacity: 1500
+
+# Если твой юнит "Камень" называется stone.hjson, 
+# попробуй написать БЕЗ префикса или С ним:
+unitType: iron-stone 
+
+# Убедись, что категория именно 'effect' (там лежат ядра в редакторе)
+category: effect
+
+requirements: [
+  iron/500
+]
+
+# Это поле критично для планет:
+research: {
+  root: true
+  planet: iron
+  requirements: []
+}

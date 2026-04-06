@@ -1,0 +1,64 @@
+# --- ПЛАНЕТА "АЙРОН" ---
+
+type: Planet
+localizedName: Айрон
+description: Горячая планета с очень плотной атмосферой. На Айроне отсутствуют все привычные ресурсы.
+
+accessible: true
+generator: SerpuloPlanetGenerator
+startSector: 0
+alwaysUnlocked: true
+
+# Размер сетки секторов (чем больше, тем больше точек на планете)
+sectorSize: 1
+# Сложность генерации ландшафта
+mesh: [
+  {
+    type: NoiseMesh
+    planet: iron
+    seed: 69
+    divisions: 2
+    radius: 1
+    color1: 5a3d1f
+    color2: 2c1810
+    octaves: 3
+    persistence: 0.5
+    scale: 1
+    mag: 0.5
+  }
+]
+# Важно для отображения секторов
+sectorSeed: 42
+allowLaunchToNumbered: false
+
+startingItems: [
+  copper/200
+  lead/200
+  iron/500
+]
+
+# parent: sun - Планета вращается вокруг главного солнца.
+parent: sun
+# orbitRadius: Расстояние от солнца.
+orbitRadius: 15
+# radius: Визуальный размер планеты на карте.
+radius: 1
+
+research: {
+  requirements: [
+    copper/5000
+    lead/5000
+  ]
+}
+
+items: [
+  # Ваши ресурсы:
+  iron,
+  uranus,
+  depleted-uranus
+]
+
+# Не забудьте также перечислить и жидкости!
+liquids: [
+  liquid-iron,
+]

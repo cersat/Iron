@@ -1,0 +1,8 @@
+type: Floor
+name: "Урановые испарения"
+attributes: {
+  uranium-presence: 1 // Сила присутствия газа на этой плитке
+}
+emitLight: true
+lightRadius: 40
+variants: 0

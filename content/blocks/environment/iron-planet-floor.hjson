@@ -1,0 +1,7 @@
+type: Floor
+localizedName: Пол Айрона
+effect: none
+isLiquid: false
+speedMultiplier: 1.0
+variants: 0
+albedo: 0

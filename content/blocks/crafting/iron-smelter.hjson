@@ -1,0 +1,24 @@
+type: GenericCrafter
+size: 2
+health: 320
+category: crafting
+
+consumes: {
+  liquids: [
+    liquid-iron/0.1
+  ]
+}
+
+outputItem: iron/1
+craftTime: 60
+
+requirements: [
+  iron/60
+]
+
+research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
+  parent: shard-core
+  requirements: [
+    iron/50
+  ]
+}

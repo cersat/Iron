@@ -1,0 +1,45 @@
+type: GenericCrafter
+size: 2
+hasPower: true
+hasItems: true
+itemCapacity: 10
+
+// Настройки производства
+craftTime: 60 // Скорость переработки (60 тиков = 1 секунда)
+
+// Что потребляет
+consumes: {
+  items: [
+    uranus/1
+  ]
+}
+
+// Что выдает (предмет)
+outputItem: depleted-uranus/1
+
+// Сколько энергии выдает (300/60 = 5 единиц в тик, если считать общую сеть)
+// В Mindustry генерация пишется через параметр 'gen':
+generator: {
+  powerProduction: 5 // 5 единиц в тик * 60 тиков = 300 единиц энергии
+}
+
+requirements: [
+  iron/60
+  uranus/10
+]
+
+category: power
+research: {
+  parent: shard-core
+  requirements: [
+    iron/100
+	uranus/15
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: iron
+      amount: 30
+    }
+  ]
+}

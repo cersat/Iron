@@ -1,0 +1,8 @@
+type: Floor
+localizedName: Лава Айрона
+effect: none
+isLiquid: false
+speedMultiplier: 0.7
+variants: 0
+cacheLayer: water
+albedo: 0.1

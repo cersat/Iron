@@ -1,0 +1,13 @@
+# --- СТАРТОВЫЙ СЕКТОР №1 ---
+# Версия, проверенная на синтаксические ошибки.
+
+planet: iron
+
+localizedName: путь
+
+sector: 0
+map: iron1
+
+alwaysUnlocked: true
+
+threat: 0

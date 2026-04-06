@@ -1,0 +1,14 @@
+localizedName: Радиоактивность
+description: Наносит небольшой урон и снижает максимальный уровегнь здоровья. Накладывается урановой пушкой
+
+color: 84F442
+
+damage: 0.2
+
+speedMultiplier: 0.85
+
+healthMultiplier: 0.75
+
+effect: wet
+
+effectChance: 0.05
