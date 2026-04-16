@@ -1,6 +1,6 @@
 type: Pump
 health: 150
-size: 2 // Убрал запятую здесь
+size: 2
 pumpAmount: 0.1
 liquidCapacity: 30
 category: liquid
@@ -9,7 +9,7 @@ requirements: [
   iron/35
 ]
 
-research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
+research: { 
   parent: shard-core
   requirements: [
     iron/50

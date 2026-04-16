@@ -8,8 +8,16 @@ requirements: [
 ]
 
 research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
-  parent: bullet-thrower
+  parent: uranus-wall
   requirements: [
     uranus/200
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      # Если сектор "Путь" кастомный, пиши его ID (обычно имя файла без расширения)
+      # Если это стандартный сектор, например "The Way", уточни его системное имя
+      preset: 1
+    }
   ]
 }

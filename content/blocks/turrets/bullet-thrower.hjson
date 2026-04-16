@@ -3,7 +3,7 @@ health: 635
 size: 2
 category: turret
 # Перезарядка в тиках (60 тиков = 1 секунда).
-reload: 25
+reload: 15
 # Дальность стрельбы в тайлах.
 range: 90
 # Скорость вращения турели.
@@ -12,9 +12,9 @@ rotateSpeed: 4
 ammoTypes: {
   iron: {
     type: BasicBullet
-    damage: 10
+    damage: 6
     speed: 4
-    lifetime: 90
+    lifetime: 70
     sprite: "bullet"
     hitEffect: none
     shootEffect: hitBulletSmall

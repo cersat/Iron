@@ -51,15 +51,17 @@ requirements: [
 ]
 
 research: {
-  parent: iron-smelter
+  parent: bullet-thrower
   requirements: [
-    uranus/15
+    iron/200
+    uranus/50
   ]
   objectives: [
     {
-      type: Produce
-      content: uranus
-      amount: 10
+      type: SectorComplete
+      # Если сектор "Путь" кастомный, пиши его ID (обычно имя файла без расширения)
+      # Если это стандартный сектор, например "The Way", уточни его системное имя
+      preset: 1
     }
   ]
 }

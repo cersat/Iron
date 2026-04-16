@@ -1,0 +1,52 @@
+type: GenericCrafter
+size: 2
+hasItems: true
+itemCapacity: 20
+category: crafting
+
+# Настройка рецептов прямо здесь
+recipes: [
+  {
+    input: { 
+      item: iron, 
+      amount: 1 
+    }
+    output: { 
+      item: crashed-iron, 
+      amount: 2 
+    }
+    craftTime: 40
+  },
+  {
+    input: { 
+      item: uranus, 
+      amount: 1 
+    }
+    output: { 
+      item: crashed-uranus, 
+      amount: 1 
+    }
+    craftTime: 120
+  }
+]
+
+requirements: [
+  iron/100
+  uranus/50
+]
+
+research: {
+  parent: iron-smelter
+  requirements: [
+    iron/250
+    uranus/100
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      # Если сектор "Путь" кастомный, пиши его ID (обычно имя файла без расширения)
+      # Если это стандартный сектор, например "The Way", уточни его системное имя
+      preset: 1
+    }
+  ]
+}
