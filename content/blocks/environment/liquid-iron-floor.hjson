@@ -1,7 +1,11 @@
 type: Floor
-liquidDrop: liquid-iron
-damage: 34
-isLiquid: true
+attributes: {
+  iron-presence: 1
+}
+emitLight: true
+lightRadius: 40
+variants: 0
+damageTaken: 34
+drownTime: 300.0
 speedMultiplier: 0.5
 variants: 0
-cacheLayer: water

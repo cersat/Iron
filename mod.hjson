@@ -2,5 +2,5 @@ name: iron
 displayName: Iron 
 description: Добавляет новую планету в игру
 author: cersat
-version: Alpha 0.63
+version: Alpha 0.64
 minGameVersion: 154
