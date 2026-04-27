@@ -32,15 +32,13 @@ sectorSeed: 42
 allowLaunchToNumbered: false
 
 startingItems: [
-  copper/200
-  lead/200
   iron/500
 ]
 
 # parent: sun - Планета вращается вокруг главного солнца.
 parent: sun
 # orbitRadius: Расстояние от солнца.
-orbitRadius: 15
+orbitRadius: 30
 # radius: Визуальный размер планеты на карте.
 radius: 1
 

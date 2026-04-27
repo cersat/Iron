@@ -1,0 +1,10 @@
+planet: iron
+
+localizedName: Океан
+
+sector: 1
+map: iron2
+
+alwaysUnlocked: false
+
+threat: 0

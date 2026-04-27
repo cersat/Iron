@@ -26,8 +26,13 @@ outputItem: uranus/1
 
 requirements: [
   iron/60
-  lead/40
+  uranus/40
 ]
 
 category: production
-research: uranium-reactor
+research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
+  parent: uranium-reactor
+  requirements: [
+    uranus/50
+  ]
+}
