@@ -1,22 +1,8 @@
-type: AttributeCrafter
-size: 3
-hasLiquids: true
-hasPower: true
-itemCapacity: 20
-
-// Время одного цикла сборки (в тиках)
-craftTime: 120 
-
-// Какой атрибут искать под собой
-attribute: iron-presence
-
-// Базовая эффективность (0.0 — не работает без газа, 1.0 — работает везде)
-baseEfficiency: 0.0
-
-outputLiquid: liquid-iron/0.2
-
-// Насколько сильно газ ускоряет работу (1.0 = +100% за каждую единицу атрибута)
-boostScale: 1
+type: Pump
+health: 150
+size: 2
+pumpAmount: 0.1
+liquidCapacity: 30
 category: liquid
 
 requirements: [

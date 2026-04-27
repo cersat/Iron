@@ -3,6 +3,8 @@ localizedName: Лава Айрона
 effect: none
 isLiquid: false
 speedMultiplier: 0.7
+damageTaken: 3
 variants: 0
-cacheLayer: water
+cacheLayer: slag
 albedo: 0.1
+damageTaken: 0.3
