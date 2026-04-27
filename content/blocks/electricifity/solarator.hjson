@@ -4,7 +4,7 @@ hasPower: true
 updateBuffer: 0.1
 
 // Насколько мощная панель
-powerProduction: 0.5
+powerProduction: 0.05
 
 requirements: [
   iron/25

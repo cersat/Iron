@@ -14,7 +14,7 @@ baseEfficiency: 0.0
 boostScale: 1
 
 consumes: {
-  power: 1.5
+  power: 0.3
 }
 
 // Что получаем на выходе
@@ -29,6 +29,7 @@ category: production
 research: { // Должны быть ФИГУРНЫЕ скобки {}, а не квадратные []
   parent: uranium-reactor
   requirements: [
-    uranus/50
+    uranus/25
+    uranus/100
   ]
 }
