@@ -1,0 +1,21 @@
+type: SolarGenerator
+size: 1 // Размер 1х1 (можно менять на 2, 3 и т.д.)
+hasPower: true
+updateBuffer: 0.1
+
+// Насколько мощная панель
+powerProduction: 0.5
+
+requirements: [
+  iron/25
+  uranus/5
+]
+
+category: power
+research: {
+  parent: uranium-reactor
+  requirements: [
+    iron/40
+	  uranus/5
+  ]
+}

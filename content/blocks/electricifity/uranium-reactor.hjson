@@ -33,7 +33,7 @@ research: {
   parent: shard-core
   requirements: [
     iron/100
-	uranus/15
+	  uranus/15
   ]
   objectives: [
     {

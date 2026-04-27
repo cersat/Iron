@@ -3,4 +3,4 @@ liquidDrop: liquid-iron
 isLiquid: true
 speedMultiplier: 0.5
 variants: 0
-cacheLayer: slag
+cacheLayer: water

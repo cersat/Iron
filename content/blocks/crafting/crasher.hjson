@@ -18,7 +18,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: 1
+      preset: 2
     }
   ]
 }

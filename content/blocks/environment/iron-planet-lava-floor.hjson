@@ -1,10 +1,9 @@
 type: Floor
-localizedName: Лава Айрона
 effect: none
 isLiquid: false
 speedMultiplier: 0.7
 damageTaken: 3
 variants: 0
-cacheLayer: slag
+cacheLayer: water
 albedo: 0.1
 damageTaken: 0.3

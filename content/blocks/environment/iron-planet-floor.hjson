@@ -1,5 +1,4 @@
 type: Floor
-localizedName: Пол Айрона
 effect: none
 isLiquid: false
 speedMultiplier: 1.0

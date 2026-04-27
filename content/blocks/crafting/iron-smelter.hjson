@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 2
-health: 320
+health: 200
 category: crafting
 
 consumes: {

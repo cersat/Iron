@@ -3,20 +3,16 @@ size: 3
 hasItems: true
 hasPower: true
 itemCapacity: 20
+health: 250
 
-// Время одного цикла сборки (в тиках)
 craftTime: 120 
 
-// Какой атрибут искать под собой
 attribute: uranium-presence
 
-// Базовая эффективность (0.0 — не работает без газа, 1.0 — работает везде)
-baseEfficiency: 0.1
+baseEfficiency: 0.0
 
-// Насколько сильно газ ускоряет работу (1.0 = +100% за каждую единицу атрибута)
 boostScale: 1
 
-// Что потребляет для работы мотора
 consumes: {
   power: 1.5
 }
