@@ -1,6 +1,15 @@
 name: iron
 displayName: Iron 
-description: Добавляет новую планету в игру
+description: 
+  '''
+  RU - Добавляет новую планету в игру: планета Айрон. 
+  Эта планета была захвачена агрессорами после их провала в захвате Эрекира и вы - последний выживший.
+  Ваша задача - полностью захватить планету используя новые технологии и ресурсы.
+  
+  EN - Adds a new planet to the game: Planet Iron.
+  This planet was captured by the aggressors after their failure to capture Erekir, and you are the last survivor.
+  Your goal is to completely capture the planet using new technologies and resources.
+  '''
 author: cersat
-version: Alpha 1.0
+version: Alpha 0.68
 minGameVersion: 154
