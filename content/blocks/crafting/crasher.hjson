@@ -4,6 +4,15 @@ hasItems: true
 itemCapacity: 20
 category: crafting
 
+consumes: {
+  items: [
+    huge_quartz/1
+  ]
+}
+
+outputItem: quartz/4
+craftTime: 60
+
 requirements: [
   iron/100
   uranus/50
