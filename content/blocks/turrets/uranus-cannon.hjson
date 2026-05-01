@@ -13,7 +13,7 @@ rotateSpeed: 2.5
 # Здесь мы указываем, какие предметы турель использует как патроны.
 ammoTypes: {
   uranus: {
-    type: ArtilleryBullet
+    type: ArtilleryBulletType
     damage: 50
     # Урон по площади.
     splashDamage: 40
@@ -29,7 +29,7 @@ ammoTypes: {
     statusDuration: 180
   }
   depleted-uranus: {
-    type: ArtilleryBullet
+    type: ArtilleryBulletType
     damage: 60
     # Урон по площади.
     splashDamage: 35

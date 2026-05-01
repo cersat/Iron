@@ -4,7 +4,6 @@ localizedName: Океан
 
 sector: 1
 map: iron2
-
-alwaysUnlocked: false
+parent: 1
 
 threat: 0

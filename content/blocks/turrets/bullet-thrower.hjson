@@ -11,7 +11,7 @@ rotateSpeed: 4
 
 ammoTypes: {
   iron: {
-    type: BasicBullet
+    type: BasicBulletType
     damage: 6
     speed: 4
     lifetime: 70
