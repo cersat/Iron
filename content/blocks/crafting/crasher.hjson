@@ -6,7 +6,7 @@ category: crafting
 
 consumes: {
   items: [
-    huge_quartz/1
+    huge-quartz/1
   ]
 }
 
