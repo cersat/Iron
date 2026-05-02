@@ -2,5 +2,5 @@ type: Floor
 liquidDrop: liquid-iron
 isLiquid: true
 speedMultiplier: 0.5
-variants: 0
+variants: 2
 cacheLayer: water

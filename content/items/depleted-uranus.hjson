@@ -3,3 +3,10 @@ radioactivity: 0.7
 hardness: 1.2
 cost: 1.5
 color: a9a9a9
+research: {
+  parent: uranus
+  
+  requirements: [
+    depleted-uranus/1
+  ]
+}
