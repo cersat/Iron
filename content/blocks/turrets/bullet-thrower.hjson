@@ -12,8 +12,22 @@ rotateSpeed: 4
 ammoTypes: {
   iron: {
     type: BasicBulletType
+    ammoMultiplier: 5
     damage: 6
     speed: 4
+    lifetime: 70
+    sprite: "bullet"
+    hitEffect: none
+    shootEffect: hitBulletSmall
+    shootSound: shoot
+    status: none
+    statusDuration: 0
+  }
+  quartz: {
+    type: BasicBulletType
+    ammoMultiplier: 3
+    damage: 8
+    speed: 5
     lifetime: 70
     sprite: "bullet"
     hitEffect: none
