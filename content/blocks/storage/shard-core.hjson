@@ -5,7 +5,8 @@ size: 3
 health: 2000
 itemCapacity: 1500
 
-unitType: iron-stone 
+unitType: iron-stone
+acceptsItems: true
 
 category: effect
 
