@@ -46,15 +46,3 @@ research: {
     lead/5000
   ]
 }
-
-items: [
-  # Ваши ресурсы:
-  iron,
-  uranus,
-  depleted-uranus
-]
-
-# Не забудьте также перечислить и жидкости!
-liquids: [
-  liquid-iron,
-]
