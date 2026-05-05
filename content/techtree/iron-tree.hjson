@@ -1,3 +1,4 @@
 planet: iron // ID твоей планеты (название файла iron.hjson)
 root: true   // Это КОРЕНЬ всего дерева
-node: shard  // Твое ядро
+node: shard-core  // Твое ядро
+name: Айрон
