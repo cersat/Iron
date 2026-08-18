@@ -1,7 +1,0 @@
-type: Floor
-attributes: {
-  uranium-presence: 1
-}
-emitLight: true
-lightRadius: 40
-variants: 0

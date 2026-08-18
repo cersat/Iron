@@ -1,7 +1,0 @@
-type: StaticWall
-variants: 2
-size: 1
-solid: true
-alwaysReplace: false
-shadowAlpha: 0.5
-category: effect

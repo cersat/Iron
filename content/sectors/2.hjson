@@ -1,9 +1,0 @@
-planet: iron
-
-localizedName: Океан
-
-sector: 1
-map: iron2
-parent: 1
-
-threat: 0
