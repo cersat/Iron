@@ -10,7 +10,7 @@ public class IronUnitTypes {
 
     public static void load() {
         ironStone = new UnitType("iron-stone") {{
-            constructor = UnitEntity::create;   // соответствует "type: flying" в hjson
+            constructor = UnitEntity::create;
             controller = u -> new BuilderAI();
 
             flying = true;
@@ -32,9 +32,6 @@ public class IronUnitTypes {
             engineSize = 2f;
 
             alwaysUnlocked = true;
-
-            localizedName = "Камень";
-            description = "Базовый транспортный дрон с Айрона. Не обладает наступательными возможностями";
         }};
     }
 }

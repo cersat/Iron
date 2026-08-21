@@ -27,7 +27,7 @@ public class IronBlocks {
     /** Кастомный атрибут поверхности, используется конденсатором и урановым газом. */
     public static Attribute uraniumPresence;
     // окружение
-    public static Block ironPlanetFloor, ironPlanetLavaFloor, liron, uraniumGasFloor, ironWall;
+    public static Block ironPlanetFloor, ironPlanetLavaFloor, liron, uraniumGasFloor, ironWall, quartzWall;
     // производство
     public static Block ironPump, ironSmelter, crasher, uranusCollector, ironPress;
     // энергия
@@ -83,6 +83,15 @@ public class IronBlocks {
             solid = true;
             alwaysReplace = false;
             category = Category.effect;
+        }};
+
+        quartzWall = new StaticWall("quartz-wall") {{
+            variants = 0;
+            size = 1;
+            solid = true;
+            alwaysReplace = false;
+            category = Category.effect;
+            itemDrop = IronItems.hugeQuartz;
         }};
 
         // ------------------------------------------------------------------
