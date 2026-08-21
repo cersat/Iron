@@ -120,7 +120,7 @@ public class IronBlocks {
         }};
 
         ironSmelter = new GenericCrafter("iron-smelter") {{
-            requirements(Category.crafting, with(IronItems.iron, 60));
+            requirements(Category.crafting, with(IronItems.iron, 45));
             size = 2;
             health = 200;
             craftTime = 60f;
@@ -171,13 +171,8 @@ public class IronBlocks {
         // ЭНЕРГИЯ
         // ------------------------------------------------------------------
 
-        // Реактор перерабатывает уран в отходы И вырабатывает энергию.
-        // В hjson блок generator: { powerProduction: 5 } не работал: у
-        // GenericCrafter такого поля нет, а парсер молча пропускает неизвестные
-        // поля. Здесь используется свой класс IronReactor, который добавляет
-        // выработку поверх обычного крафта.
         uraniumReactor = new IronReactor("uranium-reactor") {{
-            requirements(Category.power, with(IronItems.iron, 60, IronItems.uranus, 10));
+            requirements(Category.power, with(IronItems.iron, 50, IronItems.uranus, 10));
             size = 2;
             hasItems = true;
             itemCapacity = 10;
@@ -188,17 +183,17 @@ public class IronBlocks {
         }};
 
         solarator = new SolarGenerator("solarator") {{
-            requirements(Category.power, with(IronItems.iron, 25, IronItems.uranus, 5));
+            requirements(Category.power, with(IronItems.iron, 15, IronItems.uranus, 5));
             size = 1;
             hasPower = true;
             powerProduction = 0.05f;
         }};
 
         hugeSolarator = new SolarGenerator("huge-solarator") {{
-            requirements(Category.power, with(IronItems.iron, 40, IronItems.uranus, 10, IronItems.quartz, 5));
+            requirements(Category.power, with(IronItems.iron, 45, IronItems.uranus, 15, IronItems.quartz, 5));
             size = 2;
             hasPower = true;
-            powerProduction = 0.3f;
+            powerProduction = 0.25f;
         }};
 
         // ------------------------------------------------------------------
