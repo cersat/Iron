@@ -1,7 +1,6 @@
 package iron;
 
 import arc.struct.Seq;
-import mindustry.content.TechTree;
 import mindustry.game.Objectives;
 import mindustry.game.Objectives.Objective;
 
@@ -34,22 +33,26 @@ public class IronTechTree {
         IronPlanets.iron.techTree = nodeRoot("iron-tree", IronBlocks.shardCore, () -> {
 
             // --- ресурсы ---
-            node(IronItems.iron, with(IronItems.iron, 1), () -> {
-                node(IronLiquids.liquidIron, with(IronItems.iron, 1), () -> {});
+            node(IronItems.iron,produce(IronItems.iron), () -> {
+                node(IronLiquids.liquidIron, produce(IronLiquids.liquidIron), () -> {});
 
-                node(IronItems.uranus, with(IronItems.uranus, 1), () -> {
-                    node(IronItems.depletedUranus, with(IronItems.depletedUranus, 1), () -> {});
+                node(IronItems.ironPlate, produce(IronItems.ironPlate), () -> {
+                    node(IronItems.uranusPlate, with(IronItems.uranusPlate, 1), () -> {});
+                });
 
-                    node(IronItems.hugeQuartz, with(IronItems.hugeQuartz, 1), () -> {
-                        node(IronItems.quartz, with(IronItems.quartz, 1), () -> {});
+                node(IronItems.uranus, produce(IronItems.uranus), () -> {
+                    node(IronItems.depletedUranus, produce(IronItems.depletedUranus), () -> {});
+
+                    node(IronItems.hugeQuartz, produce(IronItems.hugeQuartz), () -> {
+                        node(IronItems.quartz, produce(IronItems.quartz), () -> {});
                     });
                 });
             });
 
             // --- плавильня и всё, что от неё ---
-            node(IronBlocks.ironSmelter, with(IronItems.iron, 50), () -> {
+            node(IronBlocks.ironSmelter, with(IronItems.iron, 25), () -> {
 
-                node(IronBlocks.bulletThrower, with(IronItems.iron, 100),
+                node(IronBlocks.bulletThrower, with(IronItems.iron, 80),
                         produce(IronItems.iron), () -> {
 
                     node(IronBlocks.uranusWall, with(IronItems.uranus, 50),
@@ -76,6 +79,8 @@ public class IronTechTree {
                     node(IronBlocks.fastManipulator, with(IronItems.iron, 15),
                             produce(IronItems.uranus), () -> {});
                 });
+
+                node(IronBlocks.ironPress, with(IronItems.iron, 50, IronItems.uranus, 20), () -> {});
             });
 
             // --- энергетика ---

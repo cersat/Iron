@@ -147,7 +147,7 @@ public class IronBlocks {
         }};
 
         ironPress = new MultiCrafter("iron-press") {{
-            requirements(Category.production, with(IronItems.iron, 45, IronItems.uranus, 20, IronItems.depletedUranus, 5));
+            requirements(Category.crafting, with(IronItems.iron, 35, IronItems.uranus, 10));
             health = 150;
             size = 2;
             itemCapacity = 20;
@@ -227,13 +227,13 @@ public class IronBlocks {
         // ------------------------------------------------------------------
 
         uranusWall = new Wall("uranus-wall") {{
-            requirements(Category.defense, with(IronItems.uranus, 5, IronItems.depletedUranus, 1));
+            requirements(Category.defense, with(IronItems.uranusPlate, 6));
             health = 225;
             size = 1;
         }};
 
         uranusWallLarge = new Wall("uranus-wall-large") {{
-            requirements(Category.defense, with(IronItems.uranus, 20, IronItems.depletedUranus, 4));
+            requirements(Category.defense, with(IronItems.uranusPlate, 24));
             health = 900;
             size = 2;
         }};
