@@ -1,0 +1,116 @@
+name: Обращение
+description: Баг, вопрос или идея по моду Iron
+title: "[?] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что нашли время написать. Чем подробнее заполните — тем быстрее разберусь.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип обращения
+      description: Выберите, о чём речь
+      options:
+        - Баг
+        - Вопрос
+        - Идея
+    validations:
+      required: true
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Версия Mindustry
+      description: Видно в главном меню игры, внизу экрана
+      placeholder: "157.9"
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Версия мода
+      description: Показана в списке модов рядом с названием
+      placeholder: "Alpha 0.70"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа
+      description: Сборки под ПК и Android разные, поэтому это важно
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Android
+        - iOS
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Для бага — что пошло не так. Для вопроса — сам вопрос. Для идеи — что предлагаете.
+      placeholder: Опишите своими словами
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      description: Только для багов. По шагам, от запуска игры до момента поломки.
+      placeholder: |
+        1. Поставить крашер
+        2. Подать в него огромный кварц
+        3. Игра вылетает
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Чего вы ожидали
+      description: Только для багов. Что должно было произойти вместо этого.
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Лог ошибки
+      description: |
+        Только для багов. Файл лежит в папке crashes:
+        Windows — %AppData%\Mindustry\crashes\
+        Android — Android/data/io.anuke.mindustry/files/crashes/
+        Текст вставится в блок кода автоматически, форматировать не нужно.
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: other-mods
+    attributes:
+      label: Другие моды
+      description: Перечислите остальные включённые моды. Если их нет — напишите «нет».
+      placeholder: "нет"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Перед отправкой
+      options:
+        - label: Я поискал среди уже созданных обращений и похожего не нашёл
+          required: true
+        - label: У меня установлена последняя версия мода
+          required: false
+        - label: Я проверил, что проблема остаётся при отключении остальных модов
+          required: false

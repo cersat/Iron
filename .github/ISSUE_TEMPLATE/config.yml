@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Обсуждение мода
+    url: https://github.com/cersat/Iron/discussions
+    about: Общие разговоры, помощь с установкой и всё, что не баг
+  - name: Discord Mindustry
+    url: https://discord.gg/mindustry
+    about: Официальный сервер игры — там сидят мододелы и помогают новичкам
